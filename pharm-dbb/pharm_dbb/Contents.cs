@@ -99,8 +99,8 @@ namespace SAFA
             //    var u = new Label { Text = "Antibiotics Guidelines" , TextColor = Color.FromHex("1760ae"), FontSize = 10 };
             //   Title = "Contents";
 
-            App.app_title = "HSAB Safeguarding Adults";
-            Title = "HSAB Safeguarding Adults";
+            App.app_title = "HSAB SAFA";
+            Title = "HSAB SAFA";
             BackgroundColor = Color.FromHex("FCDED4");
 
 
@@ -115,7 +115,7 @@ namespace SAFA
 
             var data = new List<GetFrontPage>  {
 
-            new GetFrontPage("Definition of an Adult at Risk", "Flag1.png"),
+     //       new GetFrontPage("Definition of an Adult at Risk", "Flag1.png"),
                 new GetFrontPage("What is Safeguarding?", "Flag2.png"),
                    new GetFrontPage("Categories of Abuse", "Flag3.png"),
                new GetFrontPage("Recognising Abuse", "Flag4.png"),

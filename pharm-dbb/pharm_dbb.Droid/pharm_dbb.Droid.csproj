@@ -27,7 +27,7 @@
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>False</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
@@ -195,13 +195,8 @@
     <AndroidResource Include="Resources\drawable\home.png" />
     <AndroidResource Include="Resources\drawable\info2.png" />
     <AndroidResource Include="Resources\drawable\cross.png" />
-    <AndroidResource Include="Resources\drawable\people.jpg" />
-    <AndroidResource Include="Resources\drawable\people2.jpg" />
-    <AndroidResource Include="Resources\drawable\contents.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable\back.png" />
-    <AndroidResource Include="Resources\drawable\hbl.png" />
-    <AndroidResource Include="Resources\drawable\HSAB_logo1.png" />
     <AndroidResource Include="Resources\drawable\s1.jpg" />
     <AndroidResource Include="Resources\drawable\Flag4.png" />
     <AndroidResource Include="Resources\drawable\Flag6.png" />
@@ -209,7 +204,6 @@
     <AndroidResource Include="Resources\drawable\Flag2.png" />
     <AndroidResource Include="Resources\drawable\Flag3.png" />
     <AndroidResource Include="Resources\drawable\Flag5.png" />
-    <AndroidResource Include="Resources\drawable\man.png" />
     <AndroidResource Include="Resources\drawable\HSAB.png" />
     <AndroidResource Include="Resources\drawable\s4.jpg" />
     <AndroidResource Include="Resources\drawable\s2.jpg" />

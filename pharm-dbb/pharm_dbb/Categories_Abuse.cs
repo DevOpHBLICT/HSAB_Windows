@@ -266,7 +266,7 @@ namespace SAFA
 
             title = new Label
             {
-                Text = "HSAB Safeguarding Adults from Abuse (SAFA)",
+                Text = "HSAB SAFA",
                 XAlign = TextAlignment.Center,
                 Font = Font.SystemFontOfSize(30),
                 BackgroundColor = Color.White

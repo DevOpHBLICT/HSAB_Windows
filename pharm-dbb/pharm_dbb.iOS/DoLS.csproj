@@ -224,7 +224,6 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Pages.cs" />
     <Compile Include="RootObject.cs" />
-    <Compile Include="TransparentWebViewRenderer.cs" />
     <None Include="DoLS_TemporaryKey.pfx" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
