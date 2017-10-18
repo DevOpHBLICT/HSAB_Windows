@@ -27,7 +27,7 @@
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>True</DebugSymbols>
+    <DebugSymbols>False</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
@@ -206,7 +206,6 @@
     <AndroidResource Include="Resources\drawable\Flag5.png" />
     <AndroidResource Include="Resources\drawable\HSAB.png" />
     <AndroidResource Include="Resources\drawable\s4.jpg" />
-    <AndroidResource Include="Resources\drawable\s2.jpg" />
     <AndroidResource Include="Resources\drawable\s5.jpg" />
     <AndroidResource Include="Resources\drawable\down.png" />
     <Content Include="values-v21\styles.xml" />

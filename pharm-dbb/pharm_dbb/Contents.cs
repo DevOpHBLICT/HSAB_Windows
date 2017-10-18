@@ -31,13 +31,7 @@ namespace SAFA
 
 
 
-        public void Recognizing_Abuse_Clicked(object sender, EventArgs args)
-        {
-            App.app_title = "Safeguarding Adults from Abuse (SAFA)";
-            var tg = new d("14", "safeguarding Adults from Abuse (SAFA)", "#bfbfbf");
-            Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-
-        }
+      
         public void Reporting_Concerns_Clicked(object sender, EventArgs args)
         {
             App.app_title = "Reporting a Concern";
@@ -48,14 +42,61 @@ namespace SAFA
         public void Making_Safeguarding_Personal_Clicked(object sender, EventArgs args)
         {
             App.app_title = "Making Safeguarding Personal";
-            var tg = new d("21", "Making safeguarding personal", "#bfbfbf");
+            var tg = new Making_Safeguarding_Better();
+            
+            //      var tg = new d("21", "Making safeguarding personal", "#bfbfbf");
             // var tg= new LocalHtmlBaseUrl { Title = "BaseUrl" };
             Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
 
         }
+        public void Definition_Adult_At_Risk_Clicked(object sender, EventArgs args)
+        {
+            App.app_title = "Definition of an Adult at Risk";
+            var tg = new definition("1", "Definition of an Adult at Risk", "#953735");
+            Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+
+        }
+
+        public void What_Is_Safeguarding_Clicked(object sender, EventArgs args)
+        {
+            App.app_title = "What is Safeguarding?";
+            var tg = new What_Is_Safeguarding(App.app_title);
+            Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+        }
+
+        public void Categories_Of_Abuse_Clicked(object sender, EventArgs args)
+        {
+                             App.app_title = "Categories of Abuse";
+                             var tg = new Categories_Abuse();
+                             Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+        }
+
+        public void Recognising_Abuse_Clicked(object sender, EventArgs args)
+        {
+            App.app_title = "Recognising Abuse";
+            var tg = new Recognising_Abuse(); 
+            //  var tg = new d("14", "Reporting a concern", "#bfbfbf");
+            Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+        }
+    //    public void Recognising_Abuse_Clicked(object sender, EventArgs args)
+    //    {
+    //        App.app_title = "Safeguarding Adults from Abuse (SAFA)";
+    //        var tg = new d("14", "safeguarding Adults from Abuse (SAFA)", "#bfbfbf");
+    //        Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+    //
+    //    }
 
 
 
+
+        public void Reporting_Concern_Clicked(object sender, EventArgs args)
+        {
+            App.app_title = "Reporting a concern";
+            var tg = new d("17", "Reporting a concern", "#bfbfbf");
+            Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+        }
+
+                    
         public class GetFrontPage
         {
             public String Image { get; set; }
@@ -84,11 +125,11 @@ namespace SAFA
             if (Device.OS == TargetPlatform.Windows)
             {
                 NavigationPage.SetHasNavigationBar(this, false);
-                s = new Label { HorizontalTextAlignment = Xamarin.Forms.TextAlignment.Center, Text = "HSAB SAFA Prompts", TextColor = Color.FromHex("953735"), Font = Font.SystemFontOfSize(24, FontAttributes.Bold) };
+                s = new Label { HorizontalTextAlignment = Xamarin.Forms.TextAlignment.Center, Text = "HSAB SAFA", TextColor = Color.FromHex("953735"), Font = Font.SystemFontOfSize(24, FontAttributes.Bold) };
                 s.HeightRequest = 40;
-                s.BackgroundColor = Color.FromHex("#923b3d");
-                s.TextColor = Color.White;
-                BackgroundColor= Color.FromHex("#923b3d");
+                s.BackgroundColor = Color.White;
+                s.TextColor = Color.FromHex("#923b3d");
+                BackgroundColor = Color.White;
                
             }
 
@@ -113,32 +154,53 @@ namespace SAFA
 
 
 
-            var data = new List<GetFrontPage>  {
+            //           var data = new List<GetFrontPage>  {
 
-     //       new GetFrontPage("Definition of an Adult at Risk", "Flag1.png"),
-                new GetFrontPage("What is Safeguarding?", "Flag2.png"),
-                   new GetFrontPage("Categories of Abuse", "Flag3.png"),
-               new GetFrontPage("Recognising Abuse", "Flag4.png"),
-                 new GetFrontPage("Reporting a Concern", "Flag5.png"),
-                 new GetFrontPage("Making Safeguarding Personal", "Flag6.png"),
+            //           new GetFrontPage("Definition of an Adult at Risk", "Flag1.png"),
+            //               new GetFrontPage("What is Safeguarding?", "Flag2.png"),
+            //                  new GetFrontPage("Categories of Abuse", "Flag3.png"),
+            //              new GetFrontPage("Recognising Abuse", "Flag4.png"),
+            //                new GetFrontPage("Reporting a Concern", "Flag5.png"),
+            //                new GetFrontPage("Making Safeguarding Personal", "Flag6.png"),
 
-            };
+            //         };
 
-            _pharmacylist = new ListView
-            {
+            //           _pharmacylist = new ListView
+            //         {
 
-                SeparatorColor = Color.FromHex("#ddd"),
-            };
-            _pharmacylist.ItemsSource = data;
-            var cell = new DataTemplate(typeof(ImageCell));
-            cell.SetValue(TextCell.TextColorProperty, Color.FromHex("a50100"));
-            _pharmacylist.HasUnevenRows = true;
+            //               SeparatorColor = Color.FromHex("#ddd"),
+            //           };
+            //           _pharmacylist.ItemsSource = data;
+            //          var cell = new DataTemplate(typeof(ImageCell));
+            //          cell.SetValue(TextCell.TextColorProperty, Color.FromHex("a50100"));
+            //         _pharmacylist.HasUnevenRows = true;
 
-            cell.SetBinding(TextCell.TextProperty, "Name");
-            cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
+            //         cell.SetBinding(TextCell.TextProperty, "Name");
+            //          cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
 
-            _pharmacylist.ItemTemplate = cell;
-            _pharmacylist.RowHeight = 63;
+            //          _pharmacylist.ItemTemplate = cell;
+            //          _pharmacylist.RowHeight = 63;
+
+            //  BackgroundImage = "people.jpg";
+            Button Definition_Adult_At_Risk = new Button { Text = "Definition of an Adult at Risk", BackgroundColor = Color.FromHex("#953735"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button What_Is_Safeguarding = new Button { Text = "What is Safeguarding?", BackgroundColor = Color.FromHex("#DB5E5E"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Categories_Of_Abuse = new Button { Text = "Categories of Abuse", BackgroundColor = Color.FromHex("#d99694"), TextColor = Color.FromHex("#953735"), VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Recognising_Abuse = new Button { Text = "Recognising Abuse", BackgroundColor = Color.FromHex("#e6b9b8"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Reporting_Concern = new Button { Text = "Reporting a Concern", BackgroundColor = Color.FromHex("#bfbfbf"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Making_Safeguarding_Personal = new Button { Text = "Making Safeguarding Personal", BackgroundColor = Color.FromHex("#896A6A"), TextColor = Color.White, HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+
+
+
+
+
+
+
+            Definition_Adult_At_Risk.Clicked += Definition_Adult_At_Risk_Clicked;
+            What_Is_Safeguarding.Clicked += What_Is_Safeguarding_Clicked;
+            Categories_Of_Abuse.Clicked += Categories_Of_Abuse_Clicked;
+            Recognising_Abuse.Clicked += Recognising_Abuse_Clicked;
+            Reporting_Concern.Clicked += Reporting_Concern_Clicked;
+            Making_Safeguarding_Personal.Clicked += Making_Safeguarding_Personal_Clicked;
 
 
 
@@ -163,7 +225,7 @@ namespace SAFA
           new Image {
                                 
                            //     BackgroundColor =Color.White,
-                                  VerticalOptions = LayoutOptions.CenterAndExpand,
+                           VerticalOptions = LayoutOptions.CenterAndExpand,
                            HorizontalOptions = LayoutOptions.CenterAndExpand,
                           HeightRequest=40,
                         //   WidthRequest=90,
@@ -224,10 +286,18 @@ namespace SAFA
 
             var k = new StackLayout
                 {
-               
+                   Padding=5,
                      //  BackgroundColor = Color.White,
                     Children = {
-                  jj, _pharmacylist,logo
+                  jj,
+                  //  _pharmacylist,
+                   Definition_Adult_At_Risk,
+                   What_Is_Safeguarding,
+                 Categories_Of_Abuse,
+                 Recognising_Abuse,
+                 Reporting_Concern,
+                 Making_Safeguarding_Personal,
+                    logo
 
                 }
                 };
@@ -236,10 +306,18 @@ namespace SAFA
             {
                 k = new StackLayout
                 {
-                    Padding = 0,
+                    Padding = 5,
                     //  BackgroundColor = Color.White,
                     Children = {
-                 s, jj, _pharmacylist,logo
+                 s, jj,
+                    Definition_Adult_At_Risk,
+                   What_Is_Safeguarding,
+                 Categories_Of_Abuse,
+                 Recognising_Abuse,
+                 Reporting_Concern,
+                 Making_Safeguarding_Personal,
+                      //  _pharmacylist,
+                        logo
 
                 }
                 };
@@ -252,61 +330,61 @@ namespace SAFA
 
 
 
-            _pharmacylist.ItemSelected += (sender, e) =>
-            {
+//            _pharmacylist.ItemSelected += (sender, e) =>
+//            {
 
 
-                if (e.SelectedItem == null) return;
-                var user = (GetFrontPage)e.SelectedItem;
-                if (user.Name == "Definition of an Adult at Risk")
-                {
-                    App.app_title = "Definition of an Adult at Risk";
-                    var tg = new definition("1", "Definition of an Adult at Risk", "#953735");
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-                }
-                if (user.Name == "What is Safeguarding?")
-                {
-                    App.app_title = "What is Safeguarding?";
-                    var tg = new What_Is_Safeguarding(App.app_title);
+ //               if (e.SelectedItem == null) return;
+ //               var user = (GetFrontPage)e.SelectedItem;
+ //               if (user.Name == "Definition of an Adult at Risk")
+ //               {
+ //                   App.app_title = "Definition of an Adult at Risk";
+ //                   var tg = new definition("1", "Definition of an Adult at Risk", "#953735");
+ //                   Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+ //               }
+ //               if (user.Name == "What is Safeguarding?")
+ //               {
+ //                   App.app_title = "What is Safeguarding?";
+ //                   var tg = new What_Is_Safeguarding(App.app_title);
 
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+//                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
 
-                }
-                if (user.Name == "Categories of Abuse")
-                {
-                    App.app_title = "Categories of Abuse";
-                    var tg = new Categories_Abuse();
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-                }
-                if (user.Name == "Recognising Abuse")
-                {
-                    App.app_title = "Recognising Abuse";
-                    var tg = new Recognising_Abuse();
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-                }
-
-
-                if (user.Name == "Reporting a Concern")
-                {
-                    App.app_title = "Reporting a concern";
-                    var tg = new d("17", "Reporting a concern", "#bfbfbf");
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-                }
-                if (user.Name == "Making Safeguarding Personal")
-                {
-                    App.app_title = "Making Safeguarding Personal";
-                    var tg = new Making_Safeguarding_Better();
-
-                    Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
-                }
+  //              }
+  //              if (user.Name == "Categories of Abuse")
+   //             {
+   //                 App.app_title = "Categories of Abuse";
+   //                 var tg = new Categories_Abuse();
+   //                 Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+   //             }
+   //             if (user.Name == "Recognising Abuse")
+   //             {
+   //                 App.app_title = "Recognising Abuse";
+   //                 var tg = new Recognising_Abuse();
+   //                 Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+   //             }
 
 
+     //           if (user.Name == "Reporting a Concern")
+   //             {
+   //                 App.app_title = "Reporting a concern";
+    //                var tg = new d("17", "Reporting a concern", "#bfbfbf");
+    //                Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+    //            }
+     //           if (user.Name == "Making Safeguarding Personal")
+     //           {
+     //               App.app_title = "Making Safeguarding Personal";
+     //               var tg = new Making_Safeguarding_Better();
 
-                if (e.SelectedItem == null) return; // don't do anything if we just de-selected the row
+       //             Xamarin.Forms.Device.BeginInvokeOnMainThread(() => Navigation.PushAsync(tg));
+         //       }
+
+
+
+       //         if (e.SelectedItem == null) return; // don't do anything if we just de-selected the row
                                                     // do something with e.SelectedItem
-                ((ListView)sender).SelectedItem = null; // de-select the row
+         //       ((ListView)sender).SelectedItem = null; // de-select the row
 
-            };
+           // };
         }
     }
 }

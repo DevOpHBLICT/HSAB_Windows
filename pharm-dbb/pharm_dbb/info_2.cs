@@ -60,7 +60,7 @@ namespace SAFA
             var htmlSource = new HtmlWebViewSource();
 
 
-
+            //color:#878787;
             var header_string = @"<html>
  <head>
  <meta name='viewport' content='width = device-width, initial-scale = 0.25, maximum-scale = 3.0 user-scalable = 1'>
@@ -69,8 +69,8 @@ namespace SAFA
 
 *{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
+font-size:22px;
 
-color:#878787;
 }
 .box {
 
@@ -273,7 +273,7 @@ margin:15px;
             
 if (info == "Recognising Abuse")
                 {
-                    htmlSource.Html = header_string + @"<p><h2 id='bb'>Recognizing Abuse</p></h2>
+                    htmlSource.Html = header_string + @"<p><h2 id='bb'>Recognising Abuse</p></h2>
 
 <p><b id='bb'>Anyone</b> can witness or become aware of information suggesting that abuse and neglect is occurring. The adult may say or do things that hint that all is not well. Regardless of how the safeguarding concern is identified, everyone should understand what to do and where to go locally to get help and advice.
 <p><b id='bb'>Professionals</b> should:

@@ -62,16 +62,16 @@ namespace SAFA
                var browser = new BaseUrlWebView(); // temporarily use this so we can custom-render in iOS 
             var htmlSource = new HtmlWebViewSource();
 
-           
 
 
+            //color:#878787;
             htmlSource.Html = @"<html> 
  <head> 
 <style>
 *{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
+font-size:22px;
 
-color:#878787;
 }
 .box {
 

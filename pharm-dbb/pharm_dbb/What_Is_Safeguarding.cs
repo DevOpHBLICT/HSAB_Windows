@@ -75,24 +75,24 @@ namespace SAFA
             var htmlSource = new HtmlWebViewSource();
 
 
-            browser.HeightRequest = 400;
+            browser.HeightRequest = 600;
             if (Device.OS == TargetPlatform.Windows)
             {
-                browser.HeightRequest = 450;
+                browser.HeightRequest = 600;
 
             }
 
             htmlSource.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
             browser.Source = htmlSource;
 
-
-
+            //      color:#878787;
+            //color:#878787;
             var ss =@"<html> 
  <head> 
 <style>
 *{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
-
+font-size:22px;
 }
 #id
 {
@@ -104,7 +104,7 @@ color:#923b3d !important;
 
 html, body {  padding: 0; margin: 0; }
 *{
-color:#878787;
+font-size:22px;
 }
 body
 {
@@ -136,7 +136,7 @@ margin:10px;
 <style>
 *{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
-
+font-size:22px;
 }
 #id
 {
@@ -148,7 +148,7 @@ color:#923b3d !important;
 
 html, body {  padding: 0; margin: 0; }
 *{
-color:#878787;
+
 }
 body
 {
@@ -181,18 +181,35 @@ margin:10px;
 
             var x = new StackLayout
             {
-
+                VerticalOptions=LayoutOptions.Start,
                 Children = {
                     browser,   
-                    yes,
+                    
                 }
             };
 
-
-            Content = new ScrollView
+            var y = new StackLayout
             {
-                Padding = 5,
-                Content = x };
+                Padding=5,
+                VerticalOptions = LayoutOptions.EndAndExpand,
+                Children =
+                {
+                    yes
+                }
+            };
+            Content = new StackLayout { Children = { x, y } };
+     //       var y = new StackLayout
+     //       {
+     //           Padding=5,
+     //           VerticalOptions=LayoutOptions.End,
+     //           Children= { yes}
+     //       };
+     //           Content = new ScrollView
+     //           {
+     //               VerticalOptions = LayoutOptions.End,
+//
+  //                  Content = new StackLayout { Children = { x, y } }
+    //            };
 
 
          

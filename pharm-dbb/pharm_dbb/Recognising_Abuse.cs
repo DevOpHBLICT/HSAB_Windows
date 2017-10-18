@@ -84,7 +84,7 @@ namespace SAFA
           
             var browser = new BaseUrlWebView(); // temporarily use this so we can custom-render in iOS 
             var htmlSource = new HtmlWebViewSource();
-            browser.HeightRequest = 400;
+            browser.HeightRequest = 500;
 
             if (Device.OS == TargetPlatform.Windows)
             {
@@ -99,6 +99,7 @@ namespace SAFA
 
             htmlSource.Html = @"<html> 
  <head> 
+<head> 
 <style>
 *{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
@@ -112,9 +113,9 @@ b{
 color:#923b3d !important;
 }
 
-html, body {  padding: 0; margin: 0; }
+html, body { height: 80%; padding: 0; margin: 0; }
 *{
-color:#878787;
+
 }
 body
 {
@@ -122,10 +123,11 @@ margin:5px;
 }
 }
 </style>
+</style>
 <meta name='viewport' content='width =device -width, initial-scale = 1.0, maximum-scale = 1.0'>
                  </head> 
  <body>
-<h3><b id ='bb'> Recognising Abuse</b> </h3>
+<h2><b id ='bb'> Recognising Abuse</b> </h2>
 <h3><b id ='bb'>Risk</b></h3>Risk is not in itself a safeguarding issue, as not all risks will result in a negative impact on the individual.
 <h3><b id='bb'>Abuse</b></h3>May be an isolated incident or multiple, affecting one or more people.
 <h3><b id='bb'>Harm</b></h3> Should be taken to include not only ill treatment but also the impairment of, or avoidable deterioration in, physical or mental health and the impairment of physical, intellectual, emotional, social or behavioural development.</div>
@@ -145,7 +147,8 @@ margin:5px;
             yes.HeightRequest = 50;
              Content = new StackLayout
             {
-                Padding=5,
+                 VerticalOptions = LayoutOptions.End,
+                 Padding =5,
                 Children = { browser, yes}
             };
 

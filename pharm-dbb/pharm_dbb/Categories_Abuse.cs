@@ -136,31 +136,35 @@ namespace SAFA
                 SeparatorColor = Color.FromHex("#ddd"),
             };
 
-            var data = new List<GetFrontPage>  {
+        
 
-            new GetFrontPage("Physical abuse", "down.png"),
-            new GetFrontPage("Domestic abuse", "down.png"),
-            new GetFrontPage("Sexual abuse", "down.png"),
-            new GetFrontPage("Psychological abuse", "down.png"),
-            new GetFrontPage("Modern slavery", "down.png"),
-            new GetFrontPage("Financial or material abuse", "down.png"),
-            new GetFrontPage("Discriminatory abuse", "down.png"),
-            new GetFrontPage("Organisational abuse", "down.png"),
-            new GetFrontPage("Neglect and acts of omission", "down.png"),
-            new GetFrontPage("Self neglect", "down.png"),
 
-            };
 
-            Categories.ItemsSource = data;
-            var cell = new DataTemplate(typeof(ImageCell));
-            cell.SetValue(TextCell.TextColorProperty, Color.FromHex("a50100"));
-           Categories.HasUnevenRows = true;
+         //   var data = new List<GetFrontPage>  {
+               // "down.png" removed
+         //   new GetFrontPage("Physical abuse", ""),
+        ///    new GetFrontPage("Domestic abuse", ""),
+        //    new GetFrontPage("Sexual abuse", ""),
+        //    new GetFrontPage("Psychological abuse", ""),
+        //    new GetFrontPage("Modern slavery", ""),
+        //    new GetFrontPage("Financial or material abuse", ""),
+        //    new GetFrontPage("Discriminatory abuse", ""),
+        //    new GetFrontPage("Organisational abuse", ""),
+        //    new GetFrontPage("Neglect and acts of omission", ""),
+        //    new GetFrontPage("Self neglect", ""),
 
-            cell.SetBinding(TextCell.TextProperty, "Name");
-            cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
+       //     };
 
-            Categories.ItemTemplate = cell;
-            Categories.RowHeight = 50;
+//            Categories.ItemsSource = data;
+  //          var cell = new DataTemplate(typeof(ImageCell));
+    //        cell.SetValue(TextCell.TextColorProperty, Color.FromHex("a50100"));
+      //     Categories.HasUnevenRows = true;
+
+    //        cell.SetBinding(TextCell.TextProperty, "Name");
+    //        cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
+      
+    //        Categories.ItemTemplate = cell;
+      //      Categories.RowHeight = 40;
 
 
 
@@ -279,16 +283,16 @@ namespace SAFA
 
 
 
-            Button Physical_Abuse = new RoundedCornersButton { TextColor = Color.White, BackgroundColor = Color.FromHex("#953735"), BorderWidth = 2, Text = "Physical", VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Domestic_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#d99694"), BorderWidth = 2, Text = "Domestic", VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Sexual_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#e6b9b8"), BorderWidth = 2, Text = "Sexual", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Psychological_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#bfbfbf"), BorderWidth = 2, Text = "Psychological", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Financial_Abuse = new RoundedCornersButton { TextColor = Color.White, BackgroundColor = Color.FromHex("#953735"), BorderWidth = 2, Text = "Financial/Material", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Modern_Slavery = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#d99694"), BorderWidth = 2, Text = "Modern Slavery", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Discriminatory_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#e6b9b8"), BorderWidth = 2, Text = "Discriminatory", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Organisational_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#bfbfbf"), BorderWidth = 2, Text = "Organisational", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Neglect_Abuse = new RoundedCornersButton { TextColor = Color.White, BackgroundColor = Color.FromHex("#953735"), BorderWidth = 2, Text = "Neglect and acts of omission", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Self_Neglect = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.FromHex("#d99694"), BorderWidth = 2, Text = "Self-neglect", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Physical_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Physical", VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Domestic_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Domestic", VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Sexual_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Sexual", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Psychological_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Psychological", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Financial_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Financial/Material", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Modern_Slavery = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Modern Slavery", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Discriminatory_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Discriminatory", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Organisational_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Organisational", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Neglect_Abuse = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Neglect and acts of omission", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Self_Neglect = new RoundedCornersButton { TextColor = Color.FromHex("#953735"), BackgroundColor = Color.White, BorderWidth = 2, Text = "Self-neglect", HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
 
             var grid = new Grid
             {
@@ -361,29 +365,37 @@ namespace SAFA
                 //               Aspect = Aspect.AspectFit,//.AspectFit//.Fill  
                 Source = ImageSource.FromFile("Page1.png")
             };
+
+            var intro = new Label();
+            intro.Text= "Please select from the categories below:";
+            intro.TextColor = Color.FromHex("#953735");
+            intro.FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label));
             var k = new StackLayout
             {
+                HeightRequest = 800,
                 Padding = 5,
                 //  BackgroundColor = Color.White,
                 Children = {
                    s,
-
-             //            Physical_Abuse,
-           // Domestic_Abuse,
-          //  Sexual_Abuse,
-          //  Psychological_Abuse,
-          //  Financial_Abuse,
-          //  Modern_Slavery,
-          //  Discriminatory_Abuse,
-          //  Organisational_Abuse,
-         //   Neglect_Abuse,
-         //   Self_Neglect,
+                   intro,
+                         Physical_Abuse,
+            Domestic_Abuse,
+            Sexual_Abuse,
+            Psychological_Abuse,
+            Financial_Abuse,
+            Modern_Slavery,
+            Discriminatory_Abuse,
+            Organisational_Abuse,
+            Neglect_Abuse,
+            Self_Neglect,
+         intro,
           Categories
 
                 }
             };
 
-            Content = k;
+             
+            Content = new ScrollView { Content =k  };
 
 
         }

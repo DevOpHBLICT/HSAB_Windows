@@ -116,13 +116,16 @@ font-family:'HelveticaNeue-Light','Helvetica','Arial';
 
  </ body> 
  </html>";
-
+            
             if (Device.OS == TargetPlatform.Windows)
             {
                  s = @"<html> 
  <head> 
- <link rel=""stylesheet"" href=""default.css""> 
 <style>    
+
+body{
+margin:10px;
+}
 {
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
 }

@@ -85,7 +85,7 @@ namespace SAFA
             htmlSource.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
             browser.Source = htmlSource;
 
-
+            //color:#878787;
 
 
             htmlSource.Html = @"<html> 
@@ -105,7 +105,7 @@ color:#923b3d !important;
 
 html, body { height: 80%; padding: 0; margin: 0; }
 *{
-color:#878787;
+
 }
 body
 {
@@ -132,6 +132,7 @@ margin:5px;
 
 
             Content = new StackLayout {
+                Padding=5,
                Children = { browser,yes }
             };
 

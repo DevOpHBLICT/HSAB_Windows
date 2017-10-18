@@ -42,7 +42,6 @@
     <Compile Include="BaseUrl.cs" />
     <Compile Include="c.cs" />
     <Compile Include="Categories_Abuse.cs" />
-    <Compile Include="contacts.cs" />
     <Compile Include="Contents.cs" />
     <Compile Include="definition.cs" />
     <Compile Include="display.cs" />

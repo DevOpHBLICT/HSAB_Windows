@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="HBLICTSharedServices.HSABSafeguardingAdults" Publisher="CN=E7FF95A5-D4ED-43E2-9C54-AB44BC6752CC" Version="1.1.0.4" />
+  <Identity Name="HBLICTSharedServices.HSABSafeguardingAdults" Publisher="CN=E7FF95A5-D4ED-43E2-9C54-AB44BC6752CC" Version="1.1.0.12" />
   <mp:PhoneIdentity PhoneProductId="58b6c711-ce37-4494-9405-0db4b53ab779" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HSAB Safeguarding Adults</DisplayName>

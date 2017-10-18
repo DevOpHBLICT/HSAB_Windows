@@ -16,9 +16,9 @@
 	<key>CFBundleIdentifier</key>
 	<string>HertsSAFA</string>
 	<key>CFBundleShortVersionString</key>
-	<string>78</string>
+	<string>79</string>
 	<key>CFBundleVersion</key>
-	<string>78</string>
+	<string>79</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
