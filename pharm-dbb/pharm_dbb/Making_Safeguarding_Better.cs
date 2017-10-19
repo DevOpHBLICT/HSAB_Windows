@@ -89,8 +89,9 @@ htmlSource.Html = @"<html>
  <head> 
  <link rel=""stylesheet"" href=""default.css""> 
 <style>    
-{
+*{
 font-family:'HelveticaNeue-Light','Helvetica','Arial';
+font-size:22px;
 }
 #triangle-right {
   width: 0; 

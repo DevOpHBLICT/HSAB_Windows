@@ -105,7 +105,7 @@ color:#923b3d !important;
 
 html, body { height: 80%; padding: 0; margin: 0; }
 *{
-
+font-size:22px;
 }
 body
 {

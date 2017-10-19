@@ -151,7 +151,7 @@ margin:10px;
 
             htmlSource.BaseUrl = DependencyService.Get<IBaseUrl>().Get();
                 browser.Source = htmlSource;
-            browser.HeightRequest = 500;
+            browser.HeightRequest = 600;
 
 
            

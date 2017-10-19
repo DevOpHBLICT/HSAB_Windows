@@ -116,7 +116,7 @@ margin:10px;
                  </head> 
  <body>
 <h2><b id ='bb'>What is Safeguarding? </b></h2>
-<h3><b id ='bb'>Safeguarding means:</b></h3></p>
+<b id ='bb'>Safeguarding means:</b>
 <br/><b id='bb'>Protecting </b> an adult's right to live in safety, free from abuse and neglect.</div>
 
 <br/><b id='bb'>Stop abuse</b> or neglect where possible.</div>

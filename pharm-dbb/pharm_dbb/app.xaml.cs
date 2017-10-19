@@ -38,7 +38,7 @@ namespace SAFA
             else
             { nav.PopToRootAsync(); }
 
-
+            App.app_title = "HSAB SAFA";
             // Xamarin.Forms.Device.BeginInvokeOnMainThread(() => nav.PopToRootAsync());
         }
 
@@ -52,7 +52,7 @@ namespace SAFA
             if (string.IsNullOrEmpty(App.app_title))
             {
 
-                var tg = new info_2("");
+                var tg = new info_2("HSAB SAFA");
                 Xamarin.Forms.Device.BeginInvokeOnMainThread(() => nav.PushAsync(tg));
 
                

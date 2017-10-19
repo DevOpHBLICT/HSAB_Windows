@@ -147,7 +147,7 @@ margin:15px;
 
                 if ((info == "HSAB SAFA") || (string.IsNullOrEmpty(info)))
             {
-                htmlSource.Html = header_string + "<textblock><b id='bb'>Additional Information</b>  <p>        Copyright <b id='bb'>HSAB and HBL ICT Services</b>. The following staff developed this app:<center> <br/><br/>Tracy Cooper <br/> Jane Newcombe <br/> Neil Wallace <br/> Michael Lamb <br/> Caroline Raut <br/><br/><p> </center> The responsible officers for this app are: <p> <b id='bb'>Caroline.Aitken@hertfordshire.gov.uk</b> or<b id='bb'> Loraine.Waterworth@hertfordshire.gov.uk</b></textblock></body></html>";
+                htmlSource.Html = header_string + "<textblock><b id='bb'>Additional Information</b>  <p>        Copyright <b id='bb'>HSAB and HBL ICT Services</b>. The following staff developed this app:<center> <br/><br/>Tracey Cooper <br/>  Michael Lamb <br/>Jane Newcombe <br/>  Caroline Raut <br/>Neil Wallace <br/><p> </center> </textblock></body></html>";
               }
 
             if (info == "Domestic")

@@ -79,7 +79,7 @@ namespace SAFA
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Physical Abuse</h3> Include assault, hitting, slapping, pushing, misusing medication, restraint or inappropriate physical sanctions.", id = "3", yesbutton = "2", nobutton = "1", yesnext = "17", nonext = "6" });
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Domestic Abuse</h3> Psychological, physical, sexual, financial, emotional abuse and so called 'honour based' abuse.", id = "4", yesbutton = "2", nobutton = "1", yesnext = "17" });
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Sexual abuse</h3> Include rape, indecent exposure, sexual harassment, inappropriate looking or touching, sexual teasing or innuendo, sexual photography, subjection to pornography or witnessing sexual acts, sexual assault or sexual acts to which the adult has not consented or was pressured into consenting.", id = "5", yesbutton = "2", nobutton = "1", yesnext = "17", nonext = "8" });
-            pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Psychological abuse</h3> Includes emotional abuse, threats of harm or abandonment, humiliation, blaming, controlling, intimidation, coercion, harassment, verbal abuse, cyber bullying, isolation or unreasonable and unjustified withdrawal of service or supportive networks. <p/> * Individuals who are susceptible to radicalisation (within the Prevent agenda) may also be considered in this category.", id = "6", yesbutton = "2", nobutton = "1", yesnext = "17" });
+            pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Psychological abuse</h3> Includes emotional abuse, threats of harm or abandonment, humiliation, blaming, controlling, intimidation, coercion, harassment, verbal abuse, cyber bullying, isolation or unreasonable and unjustified withdrawal of service or supportive networks. <br/> * Individuals who are susceptible to radicalisation (within the Prevent agenda) may also be considered in this category.", id = "6", yesbutton = "2", nobutton = "1", yesnext = "17" });
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Financial or material abuse</h3> Includes theft, fraud, internet scamming, coercion in relation to an adult's financial affairs or arrangement, including in connection with wills, property, inheritance or financial transactions, or the misuse or misappropriation of property, possessions or benefits.", id = "7", yesbutton = "2", nobutton = "1", yesnext = "17", nonext = "11" });
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Modern Slavery</h3> Encompasses slavery, human trafficking, forced labour and domestic servitude. Traffickers and slave masters use whatever means they have at their disposal to coerce, deceive and force individuals into a life of abuse, servitude and inhumane treatment.", id = "8", yesbutton = "2", yesnext = "17", nobutton = "1" });
             pages.Add(new Pages { title = "Categories of abuse", description = "<h3 style='color:#953735'>Discriminatory abuse </h3>Includes forms of harassment, slurs or similar treatment because of race, gender and gender identity, age, disability, sexual orientation or religion.", id = "9", yesbutton = "2", nobutton = "1", yesnext = "17", nonext = "12" });
@@ -136,21 +136,21 @@ namespace SAFA
 
             var output2 = new WebView();
 
-            output2.HeightRequest = 600;
+            output2.HeightRequest = 700;
 
 
             if (yesenabled == "1")
             {
                 yes.IsVisible = true;
                 yes.HeightRequest = 60;
-                output2.HeightRequest = 600;
+                output2.HeightRequest = 700;
             }
             if (yesenabled == "2")
             {
                 yes.Text = "Suspected";
                 yes.IsVisible = true;
                 yes.HeightRequest = 60;
-                output2.HeightRequest = 600;
+                output2.HeightRequest = 700;
             }
 
             if (noenabled == "1")
@@ -175,8 +175,8 @@ namespace SAFA
 
             var htmlSource = new HtmlWebViewSource();
             //   htmlSource.Html = "<div style='background-color:transparent;padding:5px;width=100%;font-size:20px'>" + k.Description + "</div><div style=';padding:5px;width=100%;'></div><p>";
-            htmlSource.Html = "<HTML><style>*{font-size:22px;font-family:'HelveticaNeue-Light','Helvetica','Arial'}</style><body margin:10px'><div style='background-color:white;width=100%;font-size:18px;>" + printout + "</div><div width=100%;'></body></html>";
-            output2.WidthRequest = 700;
+            htmlSource.Html = "<HTML><style>*{font-size:22px;font-family:'HelveticaNeue-Light','Helvetica','Arial'}</style><body margin:'10px'><div style='background-color:white;width=100%;font-size:18px;'>" + printout + "</div><div width=100%;'></body></html>";
+            output2.WidthRequest = 800;
             output2.Source = htmlSource;
             var s = new Label { HeightRequest = 0 };
             if (Device.OS == TargetPlatform.Windows)

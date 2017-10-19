@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="HBLICTSharedServices.HSABSafeguardingAdults" Publisher="CN=E7FF95A5-D4ED-43E2-9C54-AB44BC6752CC" Version="1.1.0.12" />
-  <mp:PhoneIdentity PhoneProductId="58b6c711-ce37-4494-9405-0db4b53ab779" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="HBLICTSharedServices.HSABSafeguardingAdults" Publisher="CN=E7FF95A5-D4ED-43E2-9C54-AB44BC6752CC" Version="1.1.11.3" />
+  <mp:PhoneIdentity PhoneProductId="68febea5-5229-4847-a204-53b410a521c3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>HSAB Safeguarding Adults</DisplayName>
+    <DisplayName>HSAB SAFA</DisplayName>
     <PublisherDisplayName>HBL ICT Shared Services</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

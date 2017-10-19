@@ -182,12 +182,12 @@ namespace SAFA
             //          _pharmacylist.RowHeight = 63;
 
             //  BackgroundImage = "people.jpg";
-            Button Definition_Adult_At_Risk = new Button { Text = "Definition of an Adult at Risk", BackgroundColor = Color.FromHex("#953735"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button What_Is_Safeguarding = new Button { Text = "What is Safeguarding?", BackgroundColor = Color.FromHex("#DB5E5E"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Categories_Of_Abuse = new Button { Text = "Categories of Abuse", BackgroundColor = Color.FromHex("#d99694"), TextColor = Color.FromHex("#953735"), VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Recognising_Abuse = new Button { Text = "Recognising Abuse", BackgroundColor = Color.FromHex("#e6b9b8"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Reporting_Concern = new Button { Text = "Reporting a Concern", BackgroundColor = Color.FromHex("#bfbfbf"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
-            Button Making_Safeguarding_Personal = new Button { Text = "Making Safeguarding Personal", BackgroundColor = Color.FromHex("#896A6A"), TextColor = Color.White, HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)) };
+            Button Definition_Adult_At_Risk = new Button { Text = "Definition of an Adult at Risk", BackgroundColor = Color.FromHex("#953735"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
+            Button What_Is_Safeguarding = new Button { Text = "What is Safeguarding?", BackgroundColor = Color.FromHex("#DB5E5E"), TextColor = Color.White, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
+            Button Categories_Of_Abuse = new Button { Text = "Categories of Abuse", BackgroundColor = Color.FromHex("#d99694"), TextColor = Color.FromHex("#953735"), VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
+            Button Recognising_Abuse = new Button { Text = "Recognising Abuse", BackgroundColor = Color.FromHex("#e6b9b8"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
+            Button Reporting_Concern = new Button { Text = "Reporting a Concern", BackgroundColor = Color.FromHex("#bfbfbf"), TextColor = Color.FromHex("#953735"), HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
+            Button Making_Safeguarding_Personal = new Button { Text = "Making Safeguarding Personal", BackgroundColor = Color.FromHex("#896A6A"), TextColor = Color.White, HorizontalOptions = LayoutOptions.FillAndExpand, VerticalOptions = LayoutOptions.FillAndExpand, FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) };
 
 
 
@@ -304,7 +304,15 @@ namespace SAFA
 
             if (Device.OS == TargetPlatform.Windows)
             {
-                k = new StackLayout
+
+                Definition_Adult_At_Risk.FontSize = 22;
+                What_Is_Safeguarding.FontSize = 22;
+                Categories_Of_Abuse.FontSize = 22;
+                Recognising_Abuse.FontSize = 22;
+                Reporting_Concern.FontSize = 22;
+                Making_Safeguarding_Personal.FontSize = 22;
+
+               k = new StackLayout
                 {
                     Padding = 5,
                     //  BackgroundColor = Color.White,
